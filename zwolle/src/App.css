@@ -1,0 +1,367 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f4f6;
+  color: #1f2937;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  height: 2.5rem;
+  border-radius: 4px;
+}
+
+nav .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4338ca;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #2563eb;
+  font-size: 1rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav ul li .signup {
+  background-color: #e5e7eb;
+  color: #2563eb;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+nav ul li .signup:hover {
+  background-color: #d1d5db;
+}
+
+.banner {
+  position: relative;
+  height: 24rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.banner h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #f3f4f6;
+}
+
+.banner button {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  background-color: white;
+  color: #2563eb;
+  padding: 0.5rem;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border: none;
+}
+
+.banner button:hover {
+  background-color: #e5e7eb;
+}
+
+#map-section,
+#blog-section {
+  width: 100%;
+  height: 100vh;
+}
+
+
+.header {
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  background-image: url("https://www.touristserver.nl/img/193992-1633984275/C1160X720/Zwolle+Sassenpoort+1920-1080.jpg");
+}
+
+.header article {
+  width: 600px;
+  height: 300px;
+  margin: auto;
+  padding: 20px;
+  border: 1px white solid;
+  border-radius: 15px;
+  background-color: #ffffff9a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 40px;
+  /* text-align: center; */
+}
+
+.header p {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.buttons-container button {
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-secondary {
+  background-color: #000;
+  color: #fff;
+}
+
+.blog-details-container {
+  display: flex;
+  max-width: 900px;
+  margin: 80px auto;
+  gap: 40px;
+}
+
+.blog-content {
+  flex: 1;
+}
+
+.blog-content h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.blog-content p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.blog-details-container aside {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  min-height: 200px;
+}
+
+aside img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.blog-list-container {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.blog-list-container h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.blog-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.blog-item-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px solid #eee;
+}
+
+.blog-item-container img {
+  width: 100%;
+  height: 180px;
+  background: #eee;
+  border-radius: 10px;
+}
+
+.blog-item-container h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.blog-item-container p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  background-color: #d1d1d1;
+}
+
+.post-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 600px;
+}
+
+.title {
+  color: gray;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.user-avatar img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.submit-btn {
+  background: black;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Centering the Map */
+.map-wrapper {
+  position: relative;
+  width: 800px;
+  /* Slightly bigger */
+  height: 600px;
+  /* Slightly bigger */
+  margin: 0 auto;
+  /* Centers the map horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sidebar Menu */
+.sidebar {
+  width: 200px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu Content (Stacked Layout) */
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* Ensures spacing between items */
+}
+
+.menu-content label {
+  font-weight: bold;
+}
+
+.menu-content select,
+.menu-content input[type="range"] {
+  width: 100%;
+}
+
+/* Map Images */
+.map-container-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Ensure the page stretches */
+html,
+body {
+  min-height: 150vh;
+  /* Adjust this to make it even longer */
+}
+
+/* Ensure the main wrapper is tall */
+.map-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer {
+  width: 100%;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  position: relative;
+  bottom: 0;
+}
