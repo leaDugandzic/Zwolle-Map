@@ -293,10 +293,46 @@ aside img {
   align-items: center;
 }
 
+.suggestion-section h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.suggestion-section p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn.white {
+  background-color: white;
+  color: black;
+}
+
+.btn.black {
+  background-color: black;
+  color: white;
+}
+
+
 .sidebar {
   width: 200px;
   background: white;
   padding: 15px;
+  height: 300px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -329,11 +365,172 @@ body {
 }
 
 .map-page {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
   margin-bottom: 200px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  position: relative;
+  bottom: 0;
+}
+
+.article {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 900px;
+  margin: 50px auto;
+  gap: 40px;
+}
+
+.article:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.text {
+  flex: 1;
+}
+
+.text h2 {
+  color: #4a6480;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.text p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.circle-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.suggestion {
+  background-image: url('your-image.jpg');
+  /* Zamijeni 'your-image.jpg' sa stvarnim URL-om */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  /* Centering the Map */
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.map-wrapper {
+  position: relative;
+  width: 800px;
+  /* Slightly bigger */
+  height: 600px;
+  /* Slightly bigger */
+  margin: 0 auto;
+  /* Centers the map horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.suggestion-section h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.suggestion-section p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn.white {
+  background-color: white;
+  color: black;
+}
+
+.btn.black {
+  background-color: black;
+  color: white;
+}
+
+
+/* Sidebar Menu */
+.sidebar {
+  width: 200px;
+  background: white;
+  padding: 15px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu Content (Stacked Layout) */
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* Ensures spacing between items */
+}
+
+.menu-content label {
+  font-weight: bold;
+}
+
+.menu-content select,
+.menu-content input[type="range"] {
+  width: 100%;
+}
+
+/* Map Images */
+.map-container-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Ensure the page stretches */
+html,
+body {
+  min-height: 150vh;
+  /* Adjust this to make it even longer */
+}
+
+/* Ensure the main wrapper is tall */
+.map-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .footer {
@@ -359,7 +556,7 @@ body {
   width: 200px;
   background: white;
   padding: 15px;
-  height:300px;
+  height: 300px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -391,8 +588,8 @@ body {
   left: 0;
   object-fit: cover;
   z-index: -1;
-  height:800px;
-  width:900px;
+  height: 800px;
+  width: 900px;
 }
 
 html,
@@ -401,7 +598,7 @@ body {
 }
 
 .map-page {
-  margin-top:100px;
+  margin-top: 100px;
   min-height: 100vh;
   display: flex;
   flex-direction: row;
@@ -417,6 +614,7 @@ body {
   position: relative;
   bottom: 0;
 }
+
 .map-area {
   border: 2px solid red;
   border-radius: 50%;
@@ -427,11 +625,14 @@ body {
 .map-area:hover {
   transform: scale(1.1);
 }
+
 .map-overlay {
   position: absolute;
   background: rgba(255, 0, 0, 0.5);
   border: 2px solid red;
   border-radius: 50%;
+  transform: translate(-50%, -50%);
+  /* Centers the circle */
   transform: translate(-50%, -50%); 
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
@@ -445,12 +646,12 @@ body {
 .popup {
   position: absolute;
   top: 40%;
-  left:80%;
+  left: 80%;
   transform: translateX(-50%);
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   padding: 20px;
-  width:700px;
+  width: 700px;
   border-radius: 5px;
   z-index: 1000;
 }
@@ -460,23 +661,28 @@ body {
   flex-direction: row;
   align-items: center;
 }
+
 .popup-content img {
-  width:50%;
+  width: 50%;
 }
-.popup-content div{
-  padding:20px;
+
+.popup-content div {
+  padding: 20px;
 }
-.popup-content h1{
+
+.popup-content h1 {
   font-weight: bolder;
-  font-size: 30px;    
+  font-size: 30px;
   margin-bottom: 30px;
 }
-.popup-content button{
+
+.popup-content button {
   margin-top: 20px;
 }
+
 .popup button {
   color: rgb(0, 0, 0);
-  border:rgb(0, 0, 0);
+  border: rgb(0, 0, 0);
   margin-top: 5px;
   cursor: pointer;
   font-weight: bolder;
@@ -485,4 +691,97 @@ body {
 
 .popup button:hover {
   color: rgb(125, 125, 125);
+}
+
+
+.article {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 900px;
+  margin: 50px auto;
+  gap: 40px;
+}
+
+.article:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.text {
+  flex: 1;
+}
+
+.text h2 {
+  color: #4a6480;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.text p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.circle-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.suggestion {
+  background-image: url('your-image.jpg');
+  /* Zamijeni 'your-image.jpg' sa stvarnim URL-om */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.suggestion-section {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.suggestion-section h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.suggestion-section p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn.white {
+  background-color: white;
+  color: black;
+}
+
+.btn.black {
+  background-color: black;
+  color: white;
 }
