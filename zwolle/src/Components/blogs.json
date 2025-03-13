@@ -1,0 +1,40 @@
+{
+    "blogs": [
+        {
+            "id": 1,
+            "title": "Discover the Hidden Gems of Zwolle",
+            "subtitle": "Explore the city's best-kept secrets",
+            "description": "Join us on a journey through Zwolle's lesser-known spots, from charming alleyways to historic courtyards, uncovering stories that shaped the city."
+        },
+        {
+            "id": 2,
+            "title": "A Walk Through Medieval Zwolle",
+            "subtitle": "Step back in time in the city's historic center",
+            "description": "Experience the rich history of Zwolle as we stroll past medieval walls, stunning churches, and ancient merchant houses that whisper tales of the past."
+        },
+        {
+            "id": 3,
+            "title": "Zwolle by Bike: The Ultimate Cycling Tour",
+            "subtitle": "Explore Zwolle on two wheels",
+            "description": "Discover the best cycling routes in Zwolle, from scenic riverbanks to vibrant city squares, and learn why cycling is the local way of life."
+        },
+        {
+            "id": 4,
+            "title": "Culinary Delights of Zwolle",
+            "subtitle": "Taste the city's best flavors",
+            "description": "Indulge in Zwolle’s culinary scene, visiting top bakeries, cheese shops, and cozy cafés, all while learning about the city’s food heritage."
+        },
+        {
+            "id": 5,
+            "title": "Zwolle by Night: A Magical Evening Walk",
+            "subtitle": "Experience the city under the stars",
+            "description": "Wander through Zwolle at night, when historic buildings glow beautifully and the city’s nightlife comes alive with culture and charm."
+        },
+        {
+            "id": 6,
+            "title": "Nature Escapes Near Zwolle",
+            "subtitle": "Reconnect with nature just outside the city",
+            "description": "Take a break from the urban buzz and explore lush parks, peaceful lakes, and the breathtaking landscapes surrounding Zwolle."
+        }
+    ]
+}
