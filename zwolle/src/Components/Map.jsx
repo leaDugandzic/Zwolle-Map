@@ -149,9 +149,10 @@ function Map() {
                                 alt="Overlay Map"
                                 className="map overlay"
                                 style={{
-                                    opacity: opacity2 / 100,
-                                    transform: `scale(${zoom}) rotate(${rotation}deg)`,
-                                    zIndex: 1,
+                                    left: `${scaledX}px`,
+                                    top: `${scaledY}px`,
+                                    width: `${radius * 2 * zoom}px`,
+                                    height: `${radius * 2 * zoom}px`,
                                 }}
                             />
                         )}

@@ -293,16 +293,6 @@ aside img {
   align-items: center;
 }
 
-.suggestion-section h2 {
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.suggestion-section p {
-  color: #555;
-  margin-bottom: 20px;
-}
-
 .buttons-container {
   display: flex;
   gap: 10px;
@@ -382,21 +372,6 @@ body {
   bottom: 0;
 }
 
-.article {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 900px;
-  margin: 50px auto;
-  gap: 40px;
-}
-
-.article:nth-child(2) {
-  flex-direction: row-reverse;
-}
-
 .text {
   flex: 1;
 }
@@ -421,20 +396,6 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.suggestion {
-  background-image: url('your-image.jpg');
-  /* Zamijeni 'your-image.jpg' sa stvarnim URL-om */
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  /* Centering the Map */
-  background: rgba(255, 255, 255, 0.8);
-  padding: 30px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
 .map-wrapper {
   position: relative;
   width: 800px;
@@ -446,16 +407,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.suggestion-section h2 {
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.suggestion-section p {
-  color: #555;
-  margin-bottom: 20px;
 }
 
 .buttons-container {
@@ -542,6 +493,7 @@ body {
   position: relative;
   bottom: 0;
 }
+
 .map-wrapper {
   position: relative;
   width: 800px;
@@ -635,7 +587,7 @@ body {
   transform: translate(-50%, -50%); 
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
-  z-index:100;
+  z-index: 100;
 }
 
 .map-overlay:hover {
@@ -697,7 +649,6 @@ body {
   display: flex;
   align-items: center;
   padding: 20px;
-  border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 900px;
   margin: 50px auto;
@@ -733,17 +684,20 @@ body {
 }
 
 .suggestion {
+  background-image: url('https://mediaassets.cbre.com/-/media/project/cbre/dotcom/ceuk/netherlands-emerald/offices/zwolle-office/cbre-kantoor-zwolle-content-hero-2760x828.jpg');
+  /* Zamijeni 'your-image.jpg' sa stvarnim URL-om */
   background-image: url('your-image.jpg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 100px 0px;
 }
 
 .suggestion-section {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgb(255, 255, 255);
   padding: 30px;
   border-radius: 10px;
   text-align: center;

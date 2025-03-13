@@ -21,13 +21,13 @@ function App() {
           </div>
           <ul className="flex space-x-4">
             <li>
-                <Link to={'/'}>Home</Link>
+              <Link to={'/'}>Home</Link>
             </li>
             <li>
-                <Link to={'/map'}>Map</Link>
+              <Link to={'/map'}>Map</Link>
             </li>
             <li>
-                <Link to={'/blog'}>Blog</Link>
+              <Link to={'/blog'}>Blog</Link>
             </li>
             <li>
               <a
@@ -40,7 +40,6 @@ function App() {
           </ul>
         </nav>
         <Header></Header>
-        <Map></Map>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/blog" element={<Blog />} />
