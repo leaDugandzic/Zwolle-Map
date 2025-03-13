@@ -4,6 +4,7 @@ import Header from './Components/Header'
 import Homepage from './Components/Homepage'
 import Map from './Components/Map'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import Footer from "./Components/Footer.jsx";
 
 function App() {
 
@@ -46,6 +47,7 @@ function App() {
           <Route path="/map" element={<Map />} />
         </Routes>
       </Router>
+      <Footer />
     </>
   )
 }

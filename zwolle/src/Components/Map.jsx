@@ -15,6 +15,7 @@ function Map() {
     const [overlayMap, setOverlayMap] = useState(null);
     const [opacity2, setOpacity2] = useState(100);
     const [zoom, setZoom] = useState(1);
+
     const [rotation, setRotation] = useState(0);
     const mapWrapperRef = useRef(null);
     const [mapDimensions, setMapDimensions] = useState({ width: 0, height: 0 });
@@ -52,14 +53,18 @@ function Map() {
 
     const handleZoom = (factor) => {
         setZoom((prevZoom) => Math.max(0.5, Math.min(2, prevZoom + factor)));
+
     };
+
 
 
     const scaleCoords = (x, y) => {
-        const scaledX = ((x / 2000) * mapDimensions.width) * zoom;
-        const scaledY = ((y / 1500) * mapDimensions.height) * zoom;
+        const scaledX = ((x / 2000) * mapDimensions.width);
+        const scaledY = ((y / 1500) * mapDimensions.height);
+
         return { x: scaledX, y: scaledY };
     };
+
 
     const popUp = (map) => {
         setPopUpData(map);
@@ -70,9 +75,11 @@ function Map() {
     //         window.$ = window.jQuery = $;
     //     }
 
+
     //     setTimeout(() => {
     //         console.log("jQuery version:", $.fn.jquery);
     //         console.log("jQuery UI draggable available:", $.fn.draggable);
+
 
     //         if ($.fn.draggable) {
     //             $("#draggable").draggable();
@@ -94,6 +101,7 @@ function Map() {
                         <option value="roadMap">Road Map</option>
                     </select>
                     <input type="range" min="0" max="100" value={opacity} onChange={(e) => setOpacity(e.target.value)} />
+                    <input type="range" id="rotation" min="0" max="360" value={rotation} onChange={(e) => setRotation(e.target.value)} />
                     <label>Add Overlay Map:</label>
                     <select onChange={overlayMapChange} defaultValue="noMap2">
                         <option value="noMap2">No Overlay</option>
@@ -104,7 +112,7 @@ function Map() {
                     {overlayMap && (
                         <div>
                             <input type="range" min="0" max="100" value={opacity2} onChange={(e) => setOpacity2(e.target.value)} />
-                            <input type="range" id="rotation" min="0" max="360" value={rotation} onChange={(e) => setRotation(e.target.value)} />
+
                         </div>
                     )}
                     <div className="zoom-controls">
@@ -128,47 +136,55 @@ function Map() {
                     </div>
                 )}
                 <div className="map-container-inner">
-                    <img
-                        src={selectedMap}
-                        alt="Map"
-                        className="map"
-                        style={{
-                            opacity: opacity / 100,
-                            transform: `scale(${zoom}) rotate(${rotation}deg)`,
-                        }}
-                    />
-                    {overlayMap && (
+                    <div className="imageFrame">
                         <img
-                            src={overlayMap}
-                            alt="Overlay Map"
-                            className="map overlay"
+                            src={selectedMap}
+                            alt="Map"
+                            className="map"
                             style={{
-                                opacity: opacity2 / 100,
+                                opacity: opacity / 100,
                                 transform: `scale(${zoom}) rotate(${rotation}deg)`,
-                                zIndex: 1,
                             }}
                         />
-                    )}
-                    {mapJson.map((map, index) => {
-                        const [x, y, radius] = map.coords.split(",").map(Number);
-                        const { x: scaledX, y: scaledY } = scaleCoords(x, y);
-                        return (
-                            <div
-                                key={index}
-                                className="map-overlay"
+                        {overlayMap && (
+                            <img
+                                src={overlayMap}
+                                alt="Overlay Map"
+                                className="map overlay"
                                 style={{
-                                    left: `${scaledX}px`,
-                                    top: `${scaledY}px`,
-                                    width: `${radius * 2 * zoom}px`,
-                                    height: `${radius * 2 * zoom}px`,
+                                    opacity: opacity2 / 100,
+                                    transform: `scale(${zoom}) rotate(${rotation}deg)`,
+                                    zIndex: 1,
                                 }}
-                                title={map.name}
-                                onMouseEnter={() => popUp(map)}
-                                onClick={() => popUp(map)}
-
                             />
-                        );
-                    })}
+                        )}
+                        <div className="areaPoints" style={{
+                            zIndex: 100,
+                            transform: `scale(${zoom}) rotate(${rotation}deg)`,
+
+                        }} >
+                            {mapJson.map((map, index) => {
+                                const [x, y, radius] = map.coords.split(",").map(Number);
+                                const { x: scaledX, y: scaledY } = scaleCoords(x, y);
+                                return (
+                                    <div
+                                        key={index}
+                                        className="map-overlay"
+                                        style={{
+                                            left: `${scaledX}px`,
+                                            top: `${scaledY}px`,
+                                            width: `${radius}px`,
+                                            height: `${radius}px`,
+                                        }}
+                                        title={map.name}
+                                        onMouseEnter={() => popUp(map)}
+                                        onClick={() => popUp(map)}
+
+                                    />
+                                );
+                            })}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
