@@ -21,19 +21,13 @@ function App() {
           </div>
           <ul className="flex space-x-4">
             <li>
-              <a href="#blog" className="hover:underline text-blue-600 text-base">
                 <Link to={'/'}>Home</Link>
-              </a>
             </li>
             <li>
-              <a href="#routes" className="hover:underline text-blue-600 text-base">
                 <Link to={'/map'}>Map</Link>
-              </a>
             </li>
             <li>
-              <a href="#blog" className="hover:underline text-blue-600 text-base">
                 <Link to={'/blog'}>Blog</Link>
-              </a>
             </li>
             <li>
               <a
@@ -46,6 +40,7 @@ function App() {
           </ul>
         </nav>
         <Header></Header>
+        <Map></Map>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/blog" element={<Blog />} />
