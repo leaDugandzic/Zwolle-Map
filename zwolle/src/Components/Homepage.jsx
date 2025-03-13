@@ -1,9 +1,12 @@
 import React from 'react'
+import Article from './Article'
 
 const Homepage = () => {
     return (
         <div>
-            <h2>Home page</h2>
+            <Article></Article>
+            <Article></Article>
+            <Article></Article>
         </div>
     )
 }
