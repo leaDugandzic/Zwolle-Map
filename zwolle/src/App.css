@@ -121,7 +121,6 @@ nav ul li .signup:hover {
 
 h2 {
   font-size: 40px;
-  /* text-align: center; */
 }
 
 .header p {
@@ -284,21 +283,16 @@ aside img {
   cursor: pointer;
 }
 
-/* Centering the Map */
 .map-wrapper {
   position: relative;
   width: 800px;
-  /* Slightly bigger */
   height: 600px;
-  /* Slightly bigger */
   margin: 0 auto;
-  /* Centers the map horizontally */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Sidebar Menu */
 .sidebar {
   width: 200px;
   background: white;
@@ -307,12 +301,10 @@ aside img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Menu Content (Stacked Layout) */
 .menu-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /* Ensures spacing between items */
 }
 
 .menu-content label {
@@ -324,7 +316,6 @@ aside img {
   width: 100%;
 }
 
-/* Map Images */
 .map-container-inner {
   position: relative;
   width: 100%;
@@ -332,19 +323,17 @@ aside img {
 }
 
 
-/* Ensure the page stretches */
 html,
 body {
   min-height: 150vh;
-  /* Adjust this to make it even longer */
 }
 
-/* Ensure the main wrapper is tall */
 .map-page {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-bottom: 200px;
 }
 
 .footer {
@@ -356,22 +345,16 @@ body {
   position: relative;
   bottom: 0;
 }
-
-/* Centering the Map */
 .map-wrapper {
   position: relative;
   width: 800px;
-  /* Slightly bigger */
   height: 600px;
-  /* Slightly bigger */
   margin: 0 auto;
-  /* Centers the map horizontally */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Sidebar Menu */
 .sidebar {
   width: 200px;
   background: white;
@@ -381,12 +364,10 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Menu Content (Stacked Layout) */
 .menu-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /* Ensures spacing between items */
 }
 
 .menu-content label {
@@ -398,7 +379,6 @@ body {
   width: 100%;
 }
 
-/* Map Images */
 .map-container-inner {
   position: relative;
   width: 100%;
@@ -415,14 +395,11 @@ body {
   width:900px;
 }
 
-/* Ensure the page stretches */
 html,
 body {
   min-height: 150vh;
-  /* Adjust this to make it even longer */
 }
 
-/* Ensure the main wrapper is tall */
 .map-page {
   margin-top:100px;
   min-height: 100vh;
@@ -455,9 +432,10 @@ body {
   background: rgba(255, 0, 0, 0.5);
   border: 2px solid red;
   border-radius: 50%;
-  transform: translate(-50%, -50%); /* Centers the circle */
+  transform: translate(-50%, -50%); 
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
+  z-index:100;
 }
 
 .map-overlay:hover {
