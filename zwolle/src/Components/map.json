@@ -1,43 +1,47 @@
 [
-    {
-      "id": 1,
-      "name": "Sassenpoort",
-      "info": "A well-preserved medieval city gate from the late 14th century, once part of the city's fortifications.",
-      "time": "Late 14th century",
-      "location": "Zwolle, Netherlands",
-      "locationOld": "1498,939,NaN"
-    },
-    {
-      "id": 2,
-      "name": "Peperbus Tower (Onze Lieve Vrouwekerk)",
-      "info": "A striking 15th-century church with a towering spire offering panoramic views of the city.",
-      "time": "15th century",
-      "location": "1062,1615,NaN",
-      "locationOld": "Zwolle, Netherlands"
-    },
-    {
-      "id": 3,
-      "name": "Museum de Fundatie",
-      "info": "A former palace of justice, now a museum housing an impressive art collection.",
-      "time": "N/A",
-      "location": "1443,1458,NaN",
-      "locationOld": "Zwolle, Netherlands"
-    },
-    {
-      "id": 4,
-      "name": "St. Michael’s Church (Grote Kerk)",
-      "info": "A Gothic church dating back to the 15th century, known for its historic organ.",
-      "time": "15th century",
-      "location": "1130,1343,NaN",
-      "locationOld": "Zwolle, Netherlands"
-    },
-    {
-      "id": 5,
-      "name": "Synagoge",
-      "info": "A Gothic church dating back to the 15th century, known for its historic organ.",
-      "time": "15th century",
-      "location": "1293,852,NaN",
-      "locationOld": "Zwolle, Netherlands"
-    }
-  ]
+  {
+    "name": "Sassenpoort",
+    "title": "Sassenpoort",
+    "coords": "1465,923,10",
+    "shape": "circle",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Zwolle_Sassenpoort.jpg/1200px-Zwolle_Sassenpoort.jpg",
+
+    "description": "A medieval city gate in Zwolle, Netherlands, and one of the best-preserved in the country. It dates back to the late 14th century."
   
+  },
+  {
+    "name": "De Peperbus Tower",
+    "title": "De Peperbus Tower",
+    "coords": "1053,1635,10",
+    "shape": "circle",
+    "image": "https://media.istockphoto.com/id/1338082074/photo/zwolle-peperbus-tower.jpg?s=612x612&w=0&k=20&c=XJPLswni1sGT-7KTiB0NLbGMRNZ19OiAPRSg1OU74xM=",
+
+    "description": "A landmark church tower in Zwolle, part of the Basilica of Our Lady. It is one of the tallest towers in the Netherlands."
+  },
+  {
+    "name": "Museum de Fundatie",
+    "title": "Museum de Fundatie",
+    "coords": "1443,1447,10",
+    "shape": "circle",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/2016_Museum_de_Fundatie_Zwolle.jpg",
+
+    "description": "An art museum in Zwolle, known for its extensive collection of fine arts and its unique dome-shaped architecture."
+  },
+  {
+    "name": "St. Michael’s Church (Grote Kerk)",
+    "title": "St. Michael’s Church (Grote Kerk)",
+    "coords": "1115,1353,10",
+    "shape": "circle",
+    "image": "https://www.zwolleinbeeld.nl/images/Gebouwen_Woningen_Kerken_Grote_Kerk_Het_gebouw/Grote%20Kerk%20Het%20Gebouw%202013_3771.jpg",
+
+    "description": "A historic Protestant church in Zwolle, dating back to the 15th century, known for its impressive organ and Gothic architecture."
+  },
+  {
+    "name": "Synagoge",
+    "title": "Synagoge",
+    "coords": "1295,840,10",
+    "shape": "circle",
+    "image": "https://www.openmonumentendag.nl/wp-content/uploads/2023/07/synagoge-1-scaled.jpg",
+    "description": "The synagogue of Zwolle, a historic Jewish place of worship that represents the city's rich cultural heritage."
+  }
+]
