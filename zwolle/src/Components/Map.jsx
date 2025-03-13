@@ -4,9 +4,7 @@ import newMap from "../assets/mapsImages/satelite.png";
 import roadMap from "../assets/mapsImages/streetmap.png";
 import oldMap from "../assets/mapsImages/Swolla.png";
 import mapJson from "./map.json";
-import $ from "jquery";
-import "jquery-ui-dist/jquery-ui"; 
-import "jquery-ui-dist/jquery-ui.css";
+
 
 
 function Map() {
@@ -54,7 +52,7 @@ function Map() {
         setZoom((prevZoom) => Math.max(0.5, Math.min(2, prevZoom + factor)));
     };
 
-    
+
     const scaleCoords = (x, y) => {
         const scaledX = ((x / 2000) * mapDimensions.width) * zoom;
         const scaledY = ((y / 1500) * mapDimensions.height) * zoom;
@@ -69,11 +67,11 @@ function Map() {
         if (typeof window !== "undefined") {
             window.$ = window.jQuery = $;
         }
-    
+
         setTimeout(() => {
             console.log("jQuery version:", $.fn.jquery);
             console.log("jQuery UI draggable available:", $.fn.draggable);
-    
+
             if ($.fn.draggable) {
                 $("#draggable").draggable();
             } else {
@@ -159,7 +157,7 @@ function Map() {
                                 style={{
                                     left: `${scaledX}px`,
                                     top: `${scaledY}px`,
-                                    width: `${radius * 2 * zoom}px`, 
+                                    width: `${radius * 2 * zoom}px`,
                                     height: `${radius * 2 * zoom}px`,
                                 }}
                                 title={map.name}
