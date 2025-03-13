@@ -160,7 +160,7 @@ function Map() {
                         )}
                         <div className="areaPoints" style={{
                             zIndex: 100,
-                            transform: `scale(${zoom})`,
+                            transform: `scale(${zoom}) rotate(${rotation}deg)`,
 
                         }} >
                             {mapJson.map((map, index) => {
