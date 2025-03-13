@@ -632,7 +632,6 @@ body {
   border: 2px solid red;
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  /* Centers the circle */
   transform: translate(-50%, -50%); 
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
@@ -735,7 +734,6 @@ body {
 
 .suggestion {
   background-image: url('your-image.jpg');
-  /* Zamijeni 'your-image.jpg' sa stvarnim URL-om */
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -784,4 +782,25 @@ body {
 .btn.black {
   background-color: black;
   color: white;
+}
+.areaPoints{
+  position: relative;
+  z-index:100;
+  width: 900px;
+  height:800px;
+}
+.imageFrame {
+  height: 800px;
+  width: 900px;
+  size: fixed;
+  overflow: auto;
+  position: relative;
+}
+.zoom-controls button{
+  padding:5px;
+  font-weight: bolder;
+  font-size: 30px;
+  border:none;
+  background-color: rgb(217, 217, 217);
+  transition: font-size 0.3s ease;
 }
