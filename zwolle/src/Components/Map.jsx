@@ -4,7 +4,9 @@ import newMap from "../assets/mapsImages/satelite.png";
 import roadMap from "../assets/mapsImages/streetmap.png";
 import oldMap from "../assets/mapsImages/Swolla.png";
 import mapJson from "./map.json";
-
+// import $ from "jquery";
+// import "jquery-ui-dist/jquery-ui"; 
+// import "jquery-ui-dist/jquery-ui.css";
 
 
 function Map() {
@@ -63,22 +65,22 @@ function Map() {
         setPopUpData(map);
     };
 
-    useEffect(() => {
-        if (typeof window !== "undefined") {
-            window.$ = window.jQuery = $;
-        }
+    // useEffect(() => {
+    //     if (typeof window !== "undefined") {
+    //         window.$ = window.jQuery = $;
+    //     }
 
-        setTimeout(() => {
-            console.log("jQuery version:", $.fn.jquery);
-            console.log("jQuery UI draggable available:", $.fn.draggable);
+    //     setTimeout(() => {
+    //         console.log("jQuery version:", $.fn.jquery);
+    //         console.log("jQuery UI draggable available:", $.fn.draggable);
 
-            if ($.fn.draggable) {
-                $("#draggable").draggable();
-            } else {
-                console.warn("jQuery UI draggable() is not loaded properly.");
-            }
-        }, 100);
-    }, [popUpData]);
+    //         if ($.fn.draggable) {
+    //             $("#draggable").draggable();
+    //         } else {
+    //             console.warn("jQuery UI draggable() is not loaded properly.");
+    //         }
+    //     }, 100);
+    // }, [popUpData]);
 
     return (
         <div className="map-page">

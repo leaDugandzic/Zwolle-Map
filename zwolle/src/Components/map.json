@@ -2,7 +2,7 @@
   {
     "name": "Sassenpoort",
     "title": "Sassenpoort",
-    "coords": "1465,923,10",
+    "coords": "1765,820,10",
     "shape": "circle",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Zwolle_Sassenpoort.jpg/1200px-Zwolle_Sassenpoort.jpg",
 
@@ -12,7 +12,7 @@
   {
     "name": "De Peperbus Tower",
     "title": "De Peperbus Tower",
-    "coords": "1053,1635,10",
+    "coords": "1253,1635,10",
     "shape": "circle",
     "image": "https://media.istockphoto.com/id/1338082074/photo/zwolle-peperbus-tower.jpg?s=612x612&w=0&k=20&c=XJPLswni1sGT-7KTiB0NLbGMRNZ19OiAPRSg1OU74xM=",
 
@@ -21,7 +21,7 @@
   {
     "name": "Museum de Fundatie",
     "title": "Museum de Fundatie",
-    "coords": "1443,1447,10",
+    "coords": "1743,1447,10",
     "shape": "circle",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/2016_Museum_de_Fundatie_Zwolle.jpg",
 
@@ -30,7 +30,7 @@
   {
     "name": "St. Michael’s Church (Grote Kerk)",
     "title": "St. Michael’s Church (Grote Kerk)",
-    "coords": "1115,1353,10",
+    "coords": "1315,1353,10",
     "shape": "circle",
     "image": "https://www.zwolleinbeeld.nl/images/Gebouwen_Woningen_Kerken_Grote_Kerk_Het_gebouw/Grote%20Kerk%20Het%20Gebouw%202013_3771.jpg",
 
@@ -39,7 +39,7 @@
   {
     "name": "Synagoge",
     "title": "Synagoge",
-    "coords": "1295,840,10",
+    "coords": "1495,1000,10",
     "shape": "circle",
     "image": "https://www.openmonumentendag.nl/wp-content/uploads/2023/07/synagoge-1-scaled.jpg",
     "description": "The synagogue of Zwolle, a historic Jewish place of worship that represents the city's rich cultural heritage."
